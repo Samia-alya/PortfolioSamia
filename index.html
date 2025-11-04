@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/App.css" />
+  <title> Portfolio Samia</title>
+  <link rel="icon" type="image/png" href="./cactus.png">
+
+
+
+</head>
+
+<body>
+  <nav>
+    <li><img src="./cactus.png" alt="cactus" width="25" style=" margin-left: 80px; margin-right: 5px;"> </li>
+    <li><a href="#Àpropos">Samia Al Yahiaoui</a> </li>
+    <li><a href="#Àpropos">À propos</a></li>
+    <li><a href="#Compétences">Compétences</a></li>
+    <li><a href="#Projets">Projets</a></li>
+    <li class="right">
+      <a href="https://github.com/" target="_blank">
+        <img src="./github.png" alt="GitHub" width="25">
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/samia-alyahiaoui-28672a336/" target="_blank">
+        <img src="./linkedin.png" alt="Linkedin" width="25">
+      </a>
+    </li>
+    <li>
+      <a href="mailto:samia.alya0@gmail.cm" target="_blank" style="margin-right: 80px;">
+        <img src="./mail.png" alt="Gmail" width="25">
+      </a>
+    </li>
+
+  </nav>
+
+  <div class="header">
+
+    <h1 class="thick">
+      <img src="./cactus.png" alt="cactus" width="25" style="margin-top: 50;">
+      HELLO WORLD, JE SUIS SAMIA!
+    </h1> <!--pas sûre ici du combo français angalais-->
+    <p style="margin-inline: 460px;">
+      Je suis étudiante en génie logiciel à l’Université Laval, au Québec, Canada.
+      Passionnée par la transformation d’idées en produits concrets et impactants, j’aime concevoir
+      des solutions innovantes qui peuvent toucher et améliorer la vie de nombreux utilisateurs.
+    </p>
+  </div>
+
+
+  <section id="Àpropos">
+    <div class="about">
+      <h2 class="thick">À PROPOS DE MOI</h2>
+      <p>
+        Je suis Samia Al Yahiaoui étudiante en deuxième année en génie logiciel 👩‍💻 à l’Université Laval. Je suis
+        passionnée
+        par la technologie et la programmation.
+      </p>
+      <p>
+        Grâce à ma formation en informatique et à mon esprit curieux, je possède une solide base technique
+        et une grande envie d’expérimenter. Le développement logiciel me passionne profondément, et je suis
+        toujours enthousiaste à l’idée d’apprendre et de relever de nouveaux défis. (A REVOIR)
+      </p>
+      <p>
+        Je souhaite mettre mes compétences au service de projets innovants dans le domaine du développement
+        logiciel,
+        où je pourrai contribuer à concevoir des applications performantes et intuitives tout en continuant à
+        apprendre
+        au
+        sein
+        d’une équipe dynamique. (A REVOIR)
+      </p>
+      <p>
+        En dehors de mes études, j’aime pratiquer des sports d'équipe (j'aime tout ce qui implique une balle),
+        préparer
+        des desserts et peindre sur toile 🎨.
+      </p>
+    </div>
+  </section>
+
+  <section id="Compétences">
+    <div class="skills">
+      <h2>COMPÉTENCES</h2>
+
+      <div class="tooltip">
+        <img class="skills" src="./python.png" alt="Python" width="60">
+        <span class="tooltiptext">Python</span>
+      </div>
+
+      <div class="tooltip">
+        <img class="skills" src="./java.png" alt="Java" width="60">
+        <span class="tooltiptext">Java</span>
+      </div>
+
+      <div class="tooltip">
+        <img class="skills" src="./cpp.png" alt="CPP" width="60">
+        <span class="tooltiptext">C++</span>
+      </div>
+
+      <div class="tooltip">
+        <img class="skills" src="./git.png" alt="GIT" width="60">
+        <span class="tooltiptext">Git</span>
+      </div>
+
+      <div class="tooltip">
+        <img class="skills" src="./html.png" alt="HTML" width="60">
+        <span class="tooltiptext">HTML</span>
+      </div>
+
+      <div class="tooltip">
+        <img class="skills" src="./css-3.png" alt="CSS" width="60">
+        <span class="tooltiptext">CSS</span>
+      </div>
+
+      <div class="tooltip">
+        <img class="skills" src="./java-script.png" alt="js" width="60">
+        <span class="tooltiptext">JavaScript</span>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="Projets">
+    <div class="projects">
+      <h2>PROJETS</h2>
+
+      <div class="column">
+        <div class="col">
+          <div class="card" onclick="window.open('https://github.com/GLO-1901/quixo-phase-1-Samia-alya', 'blank')">
+            <img src="./quixo.png" alt="Quixo Game Board" width="128" height="128" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">
+                Quixo
+              </h5>
+              <p class="card-text" style="margin-top: 50px;">Programme développé avec python. Il permet de jouer au jeu
+                Quixo contre une IA
+                via un serveur en ligne, incluant la gestion du plateau, la saisie des coups, et l’affichage en ASCII.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card"
+            onclick="window.open('https://github.com/GIF-1003-H2025/tp3-integration-travail-en-quipe-equipe63/tree/main','blank')">
+            <img src="./bank.png" alt="Gestion Compte Bancaire" width="128" height="128"
+              class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">
+                Gestion comptes bancaires
+              </h5>
+              <p class="card-text">Projet en C++ de gestion de comptes bancaires avec iu crée avec Qt. Le programme
+                permet d’ajouter, modifier et consulter différents types de comptes bancaires, de calculer les intérêts
+                et de
+                sauvegarder les données dans des fichiers, tout en assurant la validation des opérations.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" onclick="window.open('https://gitlab.com/glo2004-ift2007/A25-IFT-GLO-Equipe38', 'blank')">
+            <img src="./house.png" alt="Heat My Floor" width="128" height="128" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">
+                HeatMyFloor
+              </h5>
+              <p class="card-text">Développé en Java avec Swing, HeatMyFloor est une application qui
+                permet de planifier et modéliser l’installation de planchers chauffants de manière intuitive et
+                sécurisée. L’utilisateur peut créer des pièces de forme quelconque, ajouter des meubles, des
+                éléments chauffants, etc.
+                chauffant.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>
+
+        <!--Ajouter projet ALGORITHMES et autres projets ici-->
+    </div>
+  </section>
+
+
+
+
+
+  <!-- si besoin <div style  id="root"></div>*/ -->
+
+  <script type="module" src="/src/main.tsx"></script>
+  </section>
+</body>
+
+</html>
