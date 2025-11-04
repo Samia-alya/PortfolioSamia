@@ -225,3 +225,10 @@ nav li a.active {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(177, 175, 246); 
 }
+
+
+footer {
+  text-align: center;
+  font-size: 10px;
+  padding: 50 px;
+}
