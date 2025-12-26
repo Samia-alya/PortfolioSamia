@@ -128,8 +128,9 @@
     <div class="projects">
       <h2>PROJETS</h2>
       <div class="carousel-wrapper">
+          <button class="nav-btn left" onclick="scrollProjects(-1)">◀</button>
+
       <div class="column">
-        <button class="nav-btn left" onclick="scrollProjects(-1)">◀</button>
         <div class="col">
           <div class="card" onclick="window.open('https://github.com/Samia-alya/Quixo', 'blank')">
             <img src="./quixo.png" alt="Quixo Game Board" width="128" height="128" class="card-img-top">
@@ -192,8 +193,9 @@
           </div>
         </div>
         <!--Ajouter projet ALGORITHMES et autres projets ici -->
-        <button class="nav-btn right" onclick="scrollProjects(1)">▶</button>
       </div>
+          <button class="nav-btn right" onclick="scrollProjects(1)">▶</button>
+
       </div>
         <script>
           function scrollProjects(direction) {

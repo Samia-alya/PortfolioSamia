@@ -85,7 +85,9 @@ div.column {
   overflow-x: hidden;         
   scroll-behavior: smooth;
 
-  width: calc(3 * 250px + 2 * 15px); 
+  width: min(100%, calc(3 * 250px + 2 * 15px));
+  padding: 0 60px; 
+  box-sizing: border-box; 
 }
 
 div.card {
@@ -141,10 +143,10 @@ div.card div.card-text {
 }
 
 .carousel-wrapper {
+  position: relative; 
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 10px;
+  align-items: center;
 }
 
 .nav-btn {
@@ -157,23 +159,24 @@ div.card div.card-text {
   color: rgb(184, 182, 236);
   font-size: 30px;
   cursor: pointer;
-  padding: 10px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   z-index: 10;
 }
 
 .nav-btn.left {
-  left: -45px;   /* ajuste si besoin */
+  left: 10px;   /* ajuste si besoin */
 }
 
 .nav-btn.right {
-  right: -45px;  /* ajuste si besoin */
+  right: 10px;  /* ajuste si besoin */
 }
 
 
 .nav-btn:hover {
-  color: white;
-  transform: scale(1.2);
+  background: rgba(45, 42, 107, 0.8);
+  transform: translateY(-50%) scale(1.1);
 }
 
 /* navBar formattage*/
