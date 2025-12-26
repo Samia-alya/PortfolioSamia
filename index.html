@@ -195,6 +195,13 @@
         <button class="nav-btn" onclick="scrollProjects(1)">▶</button>
       </div>
       </div>
+        <script>
+          function scrollProjects(direction) {
+            const container = document.getElementById("projects");
+            const cardWidth = 270; // 250 + marges
+            container.scrollLeft += direction * cardWidth;
+          }
+        </script>
       
 
     </div>
@@ -215,16 +222,7 @@
   <script type="module" src="/src/main.jsx"></script>
   </section>
 
-  <script>
-function scrollProjects(direction) {
-  const container = document.getElementById("projects");
-  const cardWidth = 270; // 250 + marges
-  container.scrollLeft += direction * cardWidth;
-}
-</script>
-</body>
-</html>
-
+  
 </body>
 
 </html>
