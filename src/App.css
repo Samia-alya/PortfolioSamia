@@ -82,7 +82,7 @@ div.column {
   flex-wrap: nowrap;
   gap: 15px;
 
-  overflow-x: hidden;         
+  overflow-x: auto;         
   scroll-behavior: smooth;
 
   width: min(100%, calc(3 * 250px + 2 * 15px));
