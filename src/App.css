@@ -79,9 +79,16 @@ div img.skills {
 
 div.column {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   align-items: center;
+  gap: 15px;
+
+  overflow-x: hidden;         
+  scroll-behavior: smooth;
+
+  width: calc(3 * 250px + 2 * 15px); 
+  margin: auto;
 }
 
 div.card {
@@ -93,6 +100,7 @@ div.card {
   background-color: rgb(20, 16, 63);
   cursor: pointer;
   box-shadow: 0 6px 15px rgba(106, 73, 73, 0.3);
+  flex-shrink: 0;
 }
 
 
@@ -134,6 +142,28 @@ div.card div.card-text {
 .card-text, .card-title {
   background-color:  rgb(20, 16, 63);
 }
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: rgb(184, 182, 236);
+  cursor: pointer;
+  padding: 10px;
+}
+
+.nav-btn:hover {
+  color: white;
+  transform: scale(1.2);
+}
+
 /* navBar formattage*/
 nav {
   list-style-type: none;

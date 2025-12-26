@@ -127,8 +127,9 @@
   <section id="Projets">
     <div class="projects">
       <h2>PROJETS</h2>
-
+      <div class="carousel-wrapper">
       <div class="column">
+        <button class="nav-btn" onclick="scrollProjects(-1)">◀</button>
         <div class="col">
           <div class="card" onclick="window.open('https://github.com/Samia-alya/Quixo', 'blank')">
             <img src="./quixo.png" alt="Quixo Game Board" width="128" height="128" class="card-img-top">
@@ -183,18 +184,18 @@
               </h5>
               <p class="card-text" style="margin-top: 50px;"> Jeu inspiré de Flappy Bird, dans lequel le joueur contrôle un poisson qui nage dans l’eau plutôt qu’un oiseau qui vole.
               Le jeu a été développé avec Unity et C#, puis déployé en WebGL sur GitHub Pages. Il est jouable directement dans le navigateur via le lien GitHub Pages.
-              
               <a href="https://samia-alya.github.io/Floppy-Fish/" target="_blank">
-                ▶ Jouer à Floppy Fish
+                <p> ▶ Jouer à Floppy Fish </p>
               </a>
               </p>
             </div>
           </div>
         </div>
         <!--Ajouter projet ALGORITHMES et autres projets ici -->
-
+        <button class="nav-btn" onclick="scrollProjects(1)">▶</button>
       </div>
-      <p>
+      </div>
+      
 
     </div>
   </section>
@@ -213,6 +214,17 @@
 
   <script type="module" src="/src/main.jsx"></script>
   </section>
+
+  <script>
+function scrollProjects(direction) {
+  const container = document.getElementById("projects");
+  const cardWidth = 270; // 250 + marges
+  container.scrollLeft += direction * cardWidth;
+}
+</script>
+</body>
+</html>
+
 </body>
 
 </html>
