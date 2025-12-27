@@ -76,7 +76,10 @@ div img.skills {
   margin-bottom: 75px;
   margin-left: 80px;
 }
-
+.projects {
+  display: flex;
+  justify-content: center;
+}
 div.column {
   display: flex;
   flex-wrap: nowrap;
@@ -147,6 +150,10 @@ div.card div.card-text {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  width: 100%;             
+  max-width: 900px;      
+  margin: 0 auto;
 }
 
 .nav-btn {
@@ -166,11 +173,11 @@ div.card div.card-text {
 }
 
 .nav-btn.left {
-  left: 10px;   /* ajuste si besoin */
+  left: 5px;  
 }
 
 .nav-btn.right {
-  right: 10px;  /* ajuste si besoin */
+  right: 20px;  /* ajuste si besoin */
 }
 
 
