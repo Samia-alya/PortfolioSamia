@@ -56,9 +56,8 @@
     <div class="about">
       <h2 class="thick">À PROPOS DE MOI</h2>
       <p>
-        Je suis Samia Al Yahiaoui étudiante en deuxième année en génie logiciel 👩‍💻 à l’Université Laval. Je suis
-        passionnée
-        par la technologie et la programmation.
+        Je suis Samia Al Yahiaoui étudiante en troisième année en génie logiciel à l’Université Laval. Je suis
+        passionnée par la technologie et la programmation.
       </p>
       <p>
         Grâce à ma formation en informatique et à mon esprit curieux, je possède une solide base technique
@@ -75,9 +74,8 @@
         d’une équipe dynamique.
       </p>
       <p>
-        En dehors de mes études, j’aime pratiquer des sports d'équipe (j'aime tout ce qui implique une balle),
-        préparer
-        des desserts et peindre sur toile <img src="./art.png" alt="palette" width="20"> .
+       En dehors de mes études, j’aime pratiquer des sports d’équipe, surtout ceux qui se jouent avec un ballon, 
+       préparer des desserts et peindre sur toile. <img src="./art.png" alt="palette" width="20"> .
       </p>
     </div>
   </section>
@@ -196,11 +194,11 @@
       </div>
         <script>
           function scrollProjects(direction) {
-            const container = document.getElementById("projects");
-            const cardWidth = 270; // 250 + marges
-            container.scrollLeft += direction * cardWidth;
+             const container = document.getElementById("projects"); 
+          const cardWidth = 270; // 250 + marges 
+          container.scrollLeft = (container.scrollWidth - container.clientWidth) / 2; 
           }
-        </script>
+</script>
       
 
     </div>
