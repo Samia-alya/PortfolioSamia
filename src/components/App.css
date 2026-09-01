@@ -26,6 +26,13 @@ div {
   /*height: 200px;*/
 }
 
+.intro {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
 body {
   font-family: 'Pacifico', cursive;
   margin: 0;
@@ -48,15 +55,17 @@ p {
   animation-duration: 4s;
   animation-delay: 2s;
   animation-fill-mode: backwards;
+  color: rgba(184, 182, 236, 0.799);
 }
 
 div.about {
-  padding: 30px;
   margin-bottom: 15px;
-  text-align: justify;
-  margin-inline: 250px;
+  text-align: center;
   line-height: 1.5;
   /*height: 200px;*/
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 img.skills {
@@ -175,7 +184,7 @@ div.card div.card-text {
 }
 
 /* navBar formattage*/
-nav {
+.menu-desktop {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -204,6 +213,34 @@ nav li a:hover:not(.active) {
 
 nav li a.active {
   background-color: #31108b;
+}
+
+.menu-button-mobile {
+  display: block;
+  justify-self: end;
+  border: none;
+  margin-top: 20px;
+  background: none;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 42px;
+  width: 100px;
+}
+
+@media (max-width: 640px) {
+  h1 {
+    margin-top: 0px;
+    padding: 0;
+  }
+  .menu-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) {
+  .menu-button-mobile {
+    display: none;
+  }
 }
 
 .tooltip {
