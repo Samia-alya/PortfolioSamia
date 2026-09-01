@@ -68,7 +68,8 @@ div.about {
   padding: 0 20px;
 }
 
-img.skills {
+.skill-icon {
+  transition: transform 0.3s ease;
   animation-name: animate;
   animation-duration: 4s;
   animation-delay: 2s;
@@ -76,12 +77,13 @@ img.skills {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-div img.skills {
   margin-top: 50px;
   margin-bottom: 75px;
   margin-left: 80px;
+}
+
+.skill-icon:hover {
+  transform: scale(1.2);
 }
 
 div.column {
