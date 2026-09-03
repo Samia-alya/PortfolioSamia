@@ -86,20 +86,23 @@ div.about {
   transform: scale(1.2);
 }
 
-div.column {
+.columns {
   display: flex;
   flex-wrap: nowrap;
-  gap: 15px;
-
   overflow-x: auto;
-  scroll-behavior: smooth;
-
-  width: min(100%, calc(3 * 250px + 2 * 15px));
+  scroll-behavior: auto;
+  height: 700px;
+  width: 900px;
   padding: 0 60px;
   box-sizing: border-box;
 }
 
-div.card {
+.card {
+  width: 400px;
+  padding: 0 60px;
+}
+
+div.card-content {
   margin: 5px;
   border: 3px solid #ccc;
   border-radius: 8px;
@@ -111,25 +114,24 @@ div.card {
   flex-shrink: 0;
 }
 
-div.card:hover .card-text,
-div.card:hover .card-body,
-div.card:hover .card-title {
-  border: 3px solid rgb(45, 42, 107);
-  transform: scale(1.05);
+div.card-content:hover .card-text,
+div.card-content:hover .card-body,
+div.card-content:hover .card-title {
+  transform: scale(1);
   background-color: rgb(45, 42, 107);
   color: rgb(184, 182, 236);
 }
 
-div.card:hover {
+div.card-content:hover {
   border: 3px solid rgb(184, 182, 236);
-  transform: scale(1.05);
+  transform: scale(1.02);
   background-color: rgb(45, 42, 107);
 }
 
-div.card-title {
-  padding: 15px;
+.card-title {
+  padding: 8px;
+  font-size: large;
   text-align: center;
-  background-color: rgb(20, 16, 63);
 }
 
 div.card-body {
@@ -138,7 +140,7 @@ div.card-body {
   background-color: rgb(20, 16, 63);
 }
 
-div.card div.card-text {
+div.card-content div.card-text {
   padding: 15px;
   text-align: center;
   background-color: rgb(20, 16, 63);
@@ -147,6 +149,11 @@ div.card div.card-text {
 .card-text,
 .card-title {
   background-color: rgb(20, 16, 63);
+}
+
+.card-image {
+  width: 128px;
+  height: 128px;
 }
 
 .carousel-wrapper {
@@ -185,14 +192,16 @@ div.card div.card-text {
   transform: translateY(-50%) scale(1.1);
 }
 
-/* navBar formattage*/
-.menu-desktop {
+/* navbar formattage*/
+.navbar-desktop {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   position: fixed;
   display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   width: 100%;
   align-items: center;
   z-index: 1100;
@@ -208,10 +217,6 @@ div.card div.card-text {
   justify-content: space-between;
   z-index: 1200;
   margin: 0;
-}
-
-nav li.right {
-  margin-left: auto;
 }
 
 nav li a {
@@ -235,6 +240,7 @@ nav li a.active {
   cursor: pointer;
   font-size: 42px;
   width: 100px;
+  padding: 8px;
 }
 
 .menu-button-mobile-nom {
@@ -242,12 +248,18 @@ nav li a.active {
   margin: 0;
 }
 
+.menu-button-mobile-nom img {
+  margin-left: 40px;
+  margin-right: 5px;
+  width: 25px;
+}
+
 @media (max-width: 640px) {
   h1 {
     margin-top: 0px;
     padding: 0;
   }
-  .menu-desktop {
+  .navbar-desktop {
     display: none;
   }
 }

@@ -10,8 +10,8 @@
   </head>
 
   <body>
-    <nav class="navBar">
-      <div class="menu-desktop">
+    <nav class="navbar">
+      <div class="navbar-desktop">
         <li>
           <img
             src="./cactus.png"
@@ -24,7 +24,7 @@
         <li><a href="#Àpropos">À propos</a></li>
         <li><a href="#Compétences">Compétences</a></li>
         <li><a href="#Projets">Projets</a></li>
-        <li class="right">
+        <li style="margin-left: auto;">
           <a href="https://github.com/Samia-alya" target="_blank">
             <img src="./github.png" alt="GitHub" width="25" />
           </a>
@@ -40,29 +40,27 @@
           </a>
         </li>
       </div>
+
       <div class="navbar-mobile">
         <div class="menu-button-mobile-nom">
           <span>
             <img
               src="./cactus.png"
               alt="cactus"
-              width="25"
-              style="margin-left: 40px; margin-right: 5px"
             />
           </span>
           <span>Samia Al Yahiaoui</span>
         </div>
-        <div style="padding: 8px"button class="menu-button-mobile">☰</button>
+        <div button class="menu-button-mobile" >☰</button>
         </div>
       </div>
     </nav>
 
     <div class="header">
-      <h1 class="thick">
+      <h1>
         <img src="./cactus.png" alt="cactus" width="25" style="margin-top: 50" />
         HELLO WORLD, JE SUIS SAMIA.
       </h1>
-      <!--pas sûre ici du combo français angalais-->
       <p class="intro">
         Je suis étudiante en génie logiciel à l’Université Laval, au Québec, Canada. Passionnée par
         la transformation d’idées en produits concrets et impactants, j’aime concevoir des solutions
@@ -79,8 +77,8 @@
             Laval. Je suis passionnée par la technologie et la programmation.
           </p>
           <p>
-            Grâce à ma formation en informatique et à mon esprit curieux, je possède une solide base
-            technique et une grande envie d’expérimenter. Le développement logiciel me passionne
+            Grâce à ma formation en informatique et à mon esprit curieux, je possède une base technique
+            solide et une grande envie d’expérimenter. Le développement logiciel me passionne
             profondément, et je suis toujours enthousiaste à l’idée d’apprendre et de relever de
             nouveaux défis.
           </p>
@@ -153,19 +151,19 @@
     <section id="Projets">
       <div class="projects">
         <h2>PROJETS</h2>
+
         <div class="carousel-wrapper">
-          <div class="column">
-            <div class="col">
+          <div class="columns">
+            <div class="card">
+
               <div
-                class="card"
+                class="card-content"
                 onclick="window.open('https://github.com/Samia-alya/Quixo', 'blank')"
               >
                 <img
                   src="./quixo.png"
                   alt="Quixo Game Board"
-                  width="128"
-                  height="128"
-                  class="card-img-top"
+                  class="card-image"
                 />
                 <div class="card-body">
                   <h5 class="card-title">Quixo</h5>
@@ -174,12 +172,13 @@
                     via un serveur en ligne, incluant la gestion du plateau, la saisie des coups, et
                     l’affichage en ASCII.
                   </p>
-                </div>
               </div>
             </div>
-            <div class="col">
+            </div>
+
+            <div class="card">
               <div
-                class="card"
+                class="card-content"
                 onclick="
                   window.open(
                     'https://github.com/Samia-alya/Bank-Account-Management-Gestion-de-comptes-banquaires/tree/main',
@@ -190,9 +189,7 @@
                 <img
                   src="./bank.png"
                   alt="Gestion Compte Bancaire"
-                  width="128"
-                  height="128"
-                  class="card-img-top"
+                  class="card-image"
                 />
                 <div class="card-body">
                   <h5 class="card-title">Gestion comptes bancaires</h5>
@@ -205,9 +202,10 @@
                 </div>
               </div>
             </div>
-            <div class="col">
+
+            <div class="card">
               <div
-                class="card"
+                class="card-content"
                 onclick="
                   window.open('https://gitlab.com/glo2004-ift2007/A25-IFT-GLO-Equipe38', 'blank')
                 "
@@ -215,9 +213,7 @@
                 <img
                   src="./house.png"
                   alt="Heat My Floor"
-                  width="128"
-                  height="128"
-                  class="card-img-top"
+                  class="card-image"
                 />
                 <div class="card-body">
                   <h5 class="card-title">HeatMyFloor</h5>
@@ -225,23 +221,21 @@
                     Développé en Java avec Swing, HeatMyFloor est une application qui permet de
                     planifier et modéliser l’installation de planchers chauffants de manière
                     intuitive et sécurisée. L’utilisateur peut créer des pièces de forme quelconque,
-                    ajouter des meubles, des éléments chauffants, etc. Ce projet sera mis disponible
-                    bientôt une fois complété.
+                    ajouter des meubles, des éléments chauffants, etc. 
                   </p>
                 </div>
               </div>
             </div>
-            <div class="col">
+
+            <div class="card">
               <div
-                class="card"
+                class="card-content"
                 onclick="window.open('https://github.com/Samia-alya/Floppy-Fish', 'blank')"
               >
                 <img
                   src="./gold-fish (1).png"
                   alt="Floppy Fish"
-                  width="128"
-                  height="128"
-                  class="card-img-top"
+                  class="card-image"
                 />
                 <div class="card-body">
                   <h5 class="card-title">Floppy Fish</h5>
@@ -257,9 +251,11 @@
                 </div>
               </div>
             </div>
+
             <!--Ajouter projet ALGORITHMES et autres projets ici -->
           </div>
         </div>
+
         <script>
           function scrollProjects(direction) {
             const container = document.getElementById('projects');
@@ -269,6 +265,7 @@
         </script>
       </div>
     </section>
+
     <footer class="credits">
       <p>Built and designed by Samia Al Yahiaoui.</p>
       <p>
@@ -276,8 +273,6 @@
         <a href="https://www.flaticon.com" target="_blank">Flaticon</a>
       </p>
     </footer>
-
-    <!-- si besoin <div style  id="root"></div>*/ -->
 
     <script type="module" src="/src/main.jsx"></script>
   </body>
