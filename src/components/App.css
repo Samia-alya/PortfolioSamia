@@ -177,7 +177,7 @@ div.card div.card-text {
 }
 
 .nav-btn.right {
-  right: 10px; /* ajuste si besoin */
+  right: 10px;
 }
 
 .nav-btn:hover {
@@ -196,6 +196,18 @@ div.card div.card-text {
   width: 100%;
   align-items: center;
   z-index: 1100;
+}
+
+.navbar-mobile {
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1200;
+  margin: 0;
 }
 
 nav li.right {
@@ -219,14 +231,15 @@ nav li a.active {
 
 .menu-button-mobile {
   display: block;
-  justify-self: end;
   border: none;
-  margin-top: 20px;
-  background: none;
-  padding: 8px;
   cursor: pointer;
   font-size: 42px;
   width: 100px;
+}
+
+.menu-button-mobile-nom {
+  padding: 0;
+  margin: 0;
 }
 
 @media (max-width: 640px) {
@@ -240,7 +253,7 @@ nav li a.active {
 }
 
 @media (min-width: 640px) {
-  .menu-button-mobile {
+  .navbar-mobile {
     display: none;
   }
 }
