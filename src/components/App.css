@@ -236,15 +236,17 @@ div.card-content:hover {
   padding: 8px;
 }
 
-.menu-button-mobile-droit {
+.navbar-mobile-droit {
   padding: 0;
   margin: 0;
+  font-size: x-large;
+  font-weight: 600;
 }
 
-.menu-button-mobile-droit span img {
-  margin-left: 40px;
-  margin-right: 5px;
-  width: 25px;
+.navbar-mobile-droit span img {
+  margin-left: 26px;
+  margin-right: 2px;
+  width: 35px;
 }
 
 nav li a {
@@ -285,6 +287,10 @@ nav li img {
   }
   .card {
     padding: 0;
+  }
+
+  .navbar-desktop-gauche li a {
+    font-size: larger;
   }
 }
 
