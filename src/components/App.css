@@ -11,8 +11,11 @@ body {
 }
 
 h1 {
-  margin-top: 60px;
-  margin-left: 10px;
+  margin-top: 80px;
+}
+
+h2 {
+  margin-top: 30px;
 }
 
 h1,
@@ -22,8 +25,8 @@ h2 {
 }
 
 div {
-  padding: 30px;
-  margin-bottom: 15px;
+  padding: 14px;
+  margin-bottom: 12px;
   text-align: center;
   line-height: 1.5;
 }
@@ -36,13 +39,23 @@ p {
   color: rgba(184, 182, 236, 0.799);
 }
 
-.intro {
+.intro-texte {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 12px auto;
   padding: 0 20px;
 }
 
-div.about {
+.intro-titre {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.intro-cactus {
+  margin-right: 10px;
+  width: 55px;
+}
+
+.about-texte {
   max-width: 700px;
   margin: 0 auto;
   padding: 0 20px;
@@ -63,8 +76,7 @@ div.about {
   animation-duration: 4s;
   animation-delay: 2s;
   animation-fill-mode: backwards;
-  margin-top: 50px;
-  margin-bottom: 75px;
+  margin-top: 10px;
   width: 60px;
 }
 
@@ -82,7 +94,7 @@ div.about {
   padding: 5px 0;
   position: absolute;
   z-index: 1000;
-  top: 70%;
+  top: 95%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -131,7 +143,7 @@ div.about {
 div.card-content:hover .card-text,
 div.card-content:hover .card-body,
 div.card-content:hover .card-title {
-  transform: scale(1);
+  transform: scale(1.03);
   background-color: rgb(45, 42, 107);
   color: rgb(184, 182, 236);
 }
@@ -162,6 +174,11 @@ div.card-content:hover {
 .card-image {
   width: 128px;
   height: 128px;
+  border-radius: 6px;
+}
+
+.card-image:hover {
+  transform: scale(1.03);
 }
 
 .carousel-wrapper {
@@ -320,6 +337,18 @@ footer {
   text-align: center;
   font-size: 10px;
   padding: 10px;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes animate {

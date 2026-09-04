@@ -56,11 +56,13 @@
     </nav>
 
     <div class="header">
-      <h1>
-        <img src="./cactus.png" alt="cactus" width="25" style="margin-top: 50" />
-        HELLO WORLD, JE SUIS SAMIA.
+      <h1 class="intro-titre">
+        <span>
+          <img class="intro-cactus" src="./cactus.png" alt="cactus" />
+        </span>
+        <span id="typing-text" class="intro-titre-ecriture"></span>
       </h1>
-      <p class="intro">
+      <p class="intro-texte">
         Je suis étudiante en génie logiciel à l’Université Laval, au Québec, Canada. Passionnée par
         la transformation d’idées en produits concrets et impactants, j’aime concevoir des solutions
         innovantes qui peuvent toucher et améliorer la vie de nombreux utilisateurs.
@@ -158,7 +160,7 @@
                 class="card-content"
                 onclick="window.open('https://github.com/Samia-alya/Quixo', 'blank')"
               >
-                <img src="./quixo.png" alt="Quixo Game Board" class="card-image" />
+                <img class="card-image" src="./quixo.png" alt="Quixo Game Board" />
                 <div class="card-body">
                   <h5 class="card-title">Quixo</h5>
                   <p class="card-text" style="margin-top: 50px">
@@ -180,7 +182,7 @@
                   )
                 "
               >
-                <img src="./bank.png" alt="Gestion Compte Bancaire" class="card-image" />
+                <img class="card-image" src="./bank.png" alt="Gestion Compte Bancaire" />
                 <div class="card-body">
                   <h5 class="card-title">Gestion comptes bancaires</h5>
                   <p class="card-text">
@@ -200,7 +202,7 @@
                   window.open('https://gitlab.com/glo2004-ift2007/A25-IFT-GLO-Equipe38', 'blank')
                 "
               >
-                <img src="./house.png" alt="Heat My Floor" class="card-image" />
+                <img class="card-image" src="./house.png" alt="Heat My Floor" />
                 <div class="card-body">
                   <h5 class="card-title">HeatMyFloor</h5>
                   <p class="card-text">
@@ -218,7 +220,7 @@
                 class="card-content"
                 onclick="window.open('https://github.com/Samia-alya/Floppy-Fish', 'blank')"
               >
-                <img src="./gold-fish (1).png" alt="Floppy Fish" class="card-image" />
+                <img class="card-image" src="./gold-fish (1).png" alt="Floppy Fish" />
                 <div class="card-body">
                   <h5 class="card-title">Floppy Fish</h5>
                   <p class="card-text" style="margin-top: 50px">
@@ -255,6 +257,23 @@
         <a href="https://www.flaticon.com" target="_blank">Flaticon</a>
       </p>
     </footer>
+
+    <script>
+      const text = 'HELLO WORLD, JE SUIS SAMIA.';
+      const typingText = document.getElementById('typing-text');
+
+      let index = 0;
+
+      function typeText() {
+        if (index < text.length) {
+          typingText.textContent += text.charAt(index);
+          index++;
+          setTimeout(typeText, 50);
+        }
+      }
+
+      typeText();
+    </script>
 
     <script type="module" src="/src/main.jsx"></script>
   </body>
