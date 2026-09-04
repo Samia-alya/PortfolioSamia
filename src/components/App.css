@@ -39,6 +39,10 @@ p {
   color: rgba(184, 182, 236, 0.799);
 }
 
+a {
+  text-decoration: none;
+}
+
 .intro-texte {
   max-width: 700px;
   margin: 12px auto;
@@ -128,24 +132,30 @@ p {
   padding: 0 60px;
 }
 
-.card-content {
+div.card-content {
   margin: 5px;
   border: 3px solid #ccc;
   border-radius: 8px;
   width: 250px;
-  height: 550px;
+  min-height: 600px;
   background-color: rgb(20, 16, 63);
   cursor: pointer;
   box-shadow: 0 6px 15px rgba(106, 73, 73, 0.3);
   flex-shrink: 0;
 }
 
-div.card-content:hover .card-text,
 div.card-content:hover .card-body,
 div.card-content:hover .card-title {
   transform: scale(1.03);
   background-color: rgb(45, 42, 107);
   color: rgb(184, 182, 236);
+}
+
+div.card-content:hover .card-text {
+  transform: scale(1);
+  background-color: rgb(45, 42, 107);
+  color: rgb(184, 182, 236);
+  font-weight: lighter;
 }
 
 div.card-content:hover {
@@ -158,6 +168,7 @@ div.card-content:hover {
   padding: 8px;
   font-size: large;
   text-align: center;
+  font-weight: bolder;
 }
 
 .card-body {
